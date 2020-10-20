@@ -1,0 +1,56 @@
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.502,0.502,0.0}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinelanguage{ST}
+{
+	morekeywords={
+	case,of,if,then,end_if,end_case,super,function_block,extends,var,
+	constant, byte,,end_var,var_input, real,bool,var_output,
+	dint,udint,word,dword,array, of,uint,not,adr, program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif
+	},
+	otherkeywords={
+		:, :=, <>,;,\,.,\[,\],\^,1,2,3,4,5,6,7,8,9,0, TRUE, FALSE, \{attribute,  \'hide\'\}
+	},
+	keywords=[1]{
+		case,of,if,then,end_if,end_case,super,function_block,extends,var,
+		constant, byte,,end_var,var_input, real,bool,var_output,
+		dint,udint,word,dword,array, of,uint,not,adr, :, :=, <>,;,\,.,\[,\],\^,program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif
+	},
+	keywordstyle=[1]\color{blue},
+	keywords=[2]{
+		1,2,3,4,5,6,7,8,9,0, TRUE, FALSE
+	},
+	keywordstyle=[2]\color{codepurple},
+	keywords=[3]{
+		\{attribute,  \'hide\'\}
+	},
+	keywordstyle=[3]\color{codegray},
+	sensitive=false,
+	morecomment=[l]{//}, 
+	morecomment=[s]{(*}{*)},
+	morestring=[b]"
+	morestring=[b]'
+}
+
+\lstset{
+	language={ST},
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen}\textit,
+	keywordstyle=\color{blue},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\scriptsize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
