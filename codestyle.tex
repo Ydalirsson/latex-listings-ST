@@ -12,7 +12,7 @@
 	dint,udint,word,dword,array, of,uint,not,adr, program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif
 	},
 	otherkeywords={
-		:, :=, <>,;,\,.,\[,\],\^,1,2,3,4,5,6,7,8,9,0, TRUE, FALSE, \{attribute,  \'hide\'\}
+		:, :=, <>,;,\,.,\[,\],\^, TRUE, FALSE, \{attribute,  \'hide\'\}
 	},
 	keywords=[1]{
 		case,of,if,then,end_if,end_case,super,function_block,extends,var,
@@ -31,8 +31,8 @@
 	sensitive=false,
 	morecomment=[l]{//}, 
 	morecomment=[s]{(*}{*)},
-	morestring=[b]"
-	morestring=[b]'
+	morestring=[b]{"},
+	morestring=[b]{'}
 }
 
 \lstset{
