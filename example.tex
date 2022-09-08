@@ -15,8 +15,9 @@
 
 \begin{document}
 \begin{lstlisting}[language=ST, caption=function deklaration]
+(* A simple calculation program *)
 FUNCTION_BLOCK averageOf1000 : REAL
-VAR_INPUT
+VAR
 END_VAR
 VAR_IN_OUT
 	values : ARRAY[1..1000] OF REAL;
@@ -24,10 +25,12 @@ END_VAR
 VAR
 	sum : REAL;
 	index : INT;
+	exampleStr : STRING(20) := 'This is String number 42';
 END_VAR;
 \end{lstlisting}
 
 \begin{lstlisting}[language=ST, caption=function block]
+// block for assignments
 sum := 0;
 FOR Index := 1 TO 1000 BY 1 DO
 	sum := sum + values[index];

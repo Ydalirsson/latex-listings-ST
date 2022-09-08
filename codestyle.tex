@@ -9,15 +9,15 @@
 	morekeywords={
 	case,of,if,then,end_if,end_case,super,function_block,extends,var,
 	constant, byte,,end_var,var_input, real,bool,var_output,
-	dint,udint,word,dword,array, of,uint,not,adr, program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif
+	dint,udint,word,dword,array, of,uint,not,adr, program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif, var_in_out
 	},
 	otherkeywords={
-		:, :=, <>,;,\,.,\[,\],\^,1,2,3,4,5,6,7,8,9,0, TRUE, FALSE, \{attribute,  \'hide\'\}
+		:, :=, <>,;,\,.,\[,\],\^,1,2,3,4,5,6,7,8,9,0,TRUE, FALSE, \{attribute,  \'hide\'\}
 	},
 	keywords=[1]{
 		case,of,if,then,end_if,end_case,super,function_block,extends,var,
 		constant, byte,,end_var,var_input, real,bool,var_output,
-		dint,udint,word,dword,array, of,uint,not,adr, :, :=, <>,;,\,.,\[,\],\^,program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif
+		dint,udint,word,dword,array, of,uint,not,adr, :, :=, <>,;,\,.,\[,\],\^,program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif, var_in_out
 	},
 	keywordstyle=[1]\color{blue},
 	keywords=[2]{
@@ -31,8 +31,13 @@
 	sensitive=false,
 	morecomment=[l]{//}, 
 	morecomment=[s]{(*}{*)},
+<<<<<<< Updated upstream
 	morestring=[b]",
 	morestring=[b]'
+=======
+	morestring=[b]{"},
+	morestring=[b]{'}
+>>>>>>> Stashed changes
 }
 
 \lstset{
