@@ -1,29 +1,70 @@
 %New colors defined below
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.502,0.502,0.0}
+\definecolor{codeyellow}{rgb}{0.502,0.502,0.0}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.95}
 
 \lstdefinelanguage{ST}
 {
 	morekeywords={
-	case,of,if,then,end_if,end_case,super,function_block,extends,var,
-	constant, byte,,end_var,var_input, real,bool,var_output,
-	dint,udint,word,dword,array, of,uint,not,adr, program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif, var_in_out
+		ABS, ACOS, ADD, ADR, AND, ANDN, ARRAY, ASIN, AT, ATAN,
+		BITADR, BOOL, BY, BYTE,
+		CAL, CALC, CALCN, CASE, CONSTANT, COS,
+		DATE, DINT, DIV, DO, DT, DWORD,
+		ELSE, ELSIF, END_CASE, END_FOR, END_IF, END_REPEAT, END_STRUCT, END_TYPE, END_VAR, END_WHILE,
+		EQ, EXIT, EXP, EXPT,
+		FALSE, FOR, FUNCTION, FUNCTION_BLOCK,
+		GE, GT,
+		IF, INDEXOF, INT,
+		JMP, JMPC, JMPCN,
+		LD, LDN, LE, LINT, LN, LOG, LREAL, LT, LTIME, LWORD,
+		MAX, METHOD, MIN, MOD, MOVE, MUL, MUX,
+		NE, NOT,
+		OF, OR, ORN,
+		PARAMS, PERSISTENT, POINTER, PROGRAM,
+		R, READ_ONLY, READ_WRITE, REAL, REFERENCE, REPEAT, RET, RETAIN, RETC, RETCN, RETURN, ROL, ROR,
+		S, SEL, SHL, SHR, SIN, SINT, SIZEOF, SUPER, SQRT, ST, STN, STRING, STRUCT, SUB,
+		TAN, THEN, THIS, TIME, TO, TOD, TRUE, TRUNC, TYPE,
+		UDINT, UINT, ULINT, UNTIL, USINT,
+		VAR, VAR_CONFIG, VAR_EXTERNAL, VAR_GLOBAL, VAR_IN_OUT, VAR_INPUT, VAR_OUTPUT, VAR_STAT, VAR_TEMP,
+		WHILE, WORD, WSTRING,
+		XOR, XORN,
+		ACTION, END_ACTION, END_FUNCTION, END_FUNCTION_BLOCK, END_PROGRAM
 	},
 	otherkeywords={
 		:, :=, <>,;,\,.,\[,\],\^,1,2,3,4,5,6,7,8,9,0,TRUE, FALSE, \{attribute,  \'hide\'\}
 	},
 	keywords=[1]{
-		case,of,if,then,end_if,end_case,super,function_block,extends,var,
-		constant, byte,,end_var,var_input, real,bool,var_output,
-		dint,udint,word,dword,array, of,uint,not,adr, :, :=, <>,;,\,.,\[,\],\^,program, for, end_for, while, do, end_while, repeat, end_repeat, until, to, by, else, elsif, var_in_out
+		:, :=, <>,;,\,.,\[,\],\^,
+		ABS, ACOS, ADD, ADR, AND, ANDN, ARRAY, ASIN, AT, ATAN,
+		BITADR, BOOL, BY, BYTE,
+		CAL, CALC, CALCN, CASE, CONSTANT, COS,
+		DATE, DINT, DIV, DO, DT, DWORD,
+		ELSE, ELSIF, END_CASE, END_FOR, END_IF, END_REPEAT, END_STRUCT, END_TYPE, END_VAR, END_WHILE,
+		EQ, EXIT, EXP, EXPT,
+		FALSE, FOR, FUNCTION, FUNCTION_BLOCK,
+		GE, GT,
+		IF, INDEXOF, INT,
+		JMP, JMPC, JMPCN,
+		LD, LDN, LE, LINT, LN, LOG, LREAL, LT, LTIME, LWORD,
+		MAX, METHOD, MIN, MOD, MOVE, MUL, MUX,
+		NE, NOT,
+		OF, OR, ORN,
+		PARAMS, PERSISTENT, POINTER, PROGRAM,
+		R, READ_ONLY, READ_WRITE, REAL, REFERENCE, REPEAT, RET, RETAIN, RETC, RETCN, RETURN, ROL, ROR,
+		S, SEL, SHL, SHR, SIN, SINT, SIZEOF, SUPER, SQRT, ST, STN, STRING, STRUCT, SUB,
+		TAN, THEN, THIS, TIME, TO, TOD, TRUE, TRUNC, TYPE,
+		UDINT, UINT, ULINT, UNTIL, USINT,
+		VAR, VAR_CONFIG, VAR_EXTERNAL, VAR_GLOBAL, VAR_IN_OUT, VAR_INPUT, VAR_OUTPUT, VAR_STAT, VAR_TEMP,
+		WHILE, WORD, WSTRING,
+		XOR, XORN,
+		ACTION, END_ACTION, END_FUNCTION, END_FUNCTION_BLOCK, END_PROGRAM
 	},
 	keywordstyle=[1]\color{blue},
 	keywords=[2]{
 		1,2,3,4,5,6,7,8,9,0, TRUE, FALSE
 	},
-	keywordstyle=[2]\color{codepurple},
+	keywordstyle=[2]\color{codeyellow},
 	keywords=[3]{
 		\{attribute,  \'hide\'\}
 	},
@@ -41,7 +82,7 @@
 	commentstyle=\color{codegreen}\textit,
 	keywordstyle=\color{blue},
 	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},
+	stringstyle=\color{codeyellow},
 	basicstyle=\ttfamily\scriptsize,
 	breakatwhitespace=false,         
 	breaklines=true,                 
